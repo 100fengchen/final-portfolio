@@ -1,8 +1,8 @@
 import React from 'react'
 import Arrow from '../visual/Arrow.svg'
 
-export default function 
-() {
+
+export default function SubNav() {
   return (
     <div class="subnavcontainer">
         <div class="line"></div>
@@ -14,6 +14,7 @@ export default function
                 <div class="Vrt endline" ></div>
                <div class="Pbutton">
                    <div class="PBox">Service Design</div>
+                   
                    <img class="Arrow" src={Arrow} alt="This is an arrow"/>
                </div>
                <div class="Vrt"></div>

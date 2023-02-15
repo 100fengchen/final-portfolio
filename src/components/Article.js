@@ -17,7 +17,9 @@ export default function Article() {
                         Chen</button>
                 </div> 
             </div>
+            <div id = "potraitbox">
             <img class="Portrait" src={Portrait} alt="My handsome selfie hehe"/>
+            </div>
             <footer>2022 All rights reserved @Pai-Feng, Chen</footer>  
     </div>
   )

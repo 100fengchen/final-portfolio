@@ -3,6 +3,7 @@ import "./App.css"
 import Nav from './components/Nav';
 import SubNav from "./components/SubNav";
 import Article from "./components/Article";
+import ServiceDesignMenu from './components/ServiceDesignMenu'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Nav />
       <SubNav />
       <Article />
+      <ServiceDesignMenu />
     </body>
     </>
   );

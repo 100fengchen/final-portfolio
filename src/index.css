@@ -110,6 +110,8 @@ img{
   height: 10vh;
 }
 
+
+
 .ProductContainer{
   display: flex;
   justify-content: space-between;
@@ -160,7 +162,6 @@ h1{
   height: 79vh;
   max-height: 100%;
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
 
   flex-direction: row;
@@ -173,11 +174,15 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 18vh;
+}
+
+#potraitbox{
+  display: flex;
+  align-items: flex-end;
 }
 
 .BigName{
-  font-size: 16vh;
+  font-size: 13vh;
   background: none;
   text-align: left;
   font-family: 'Noto Serif Display', serif ;
@@ -196,7 +201,7 @@ h1{
 
 #rectangle{
   width:50vw;
-  height:20vh;
+  height:30vh;
   border: 1vh solid var(--white);
   left: -20px;
   border-radius: 0 5vw 0 0;
@@ -230,9 +235,7 @@ footer{
   bottom: 10px
 }
 @media(max-height:800px){
-  .TextContentContainer{
-      gap: 25vh;
-  }
+  
   .BigName{
       font-size: 14vh;
   }
@@ -242,7 +245,7 @@ footer{
   #rectangle{
       width: 65vw;
       position: relative;
-      bottom: -5vh;
+      
   }
 }
 
@@ -259,7 +262,7 @@ footer{
   }
   
   .BigName{
-      font-size: 10vw;
+      font-size: 13vw;
       }
   #mywork{
       display: none;
@@ -270,14 +273,16 @@ footer{
 }
 
 @media only screen and (max-width: 800px) { 
+  .PBox{
+    font-size: 5vw;
+  }
+
   #menuToggle span{
       display: block;
   }
   
-
-
   .ProductContainer{
-      justify-content: space-around;
+    gap: 5vw;
   }
 
   .Arrow{
@@ -314,10 +319,8 @@ footer{
 
 @media(max-width:400px){
  
-  .TextContentContainer{
-      gap: 30vh;
-  }
-}
+
+
 
 
 @media(max-height:700px){
@@ -333,4 +336,31 @@ footer{
   #rectangle{
   display: none;
  }
+}}
+
+
+/* Below are interactive items */
+
+.Menu{
+  position: absolute;
+  top: 25vh;
+  right: 5vw;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.MenuItem{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;  vertical-align: middle;
+  color: var(--white);
+  font-family: 'Noto Serif Display', serif ;  
+  height: 10vh;
+  margin-bottom: -1px;
+  border-top: 1px solid var(--white);
+  border: solid var(--white);
 }
