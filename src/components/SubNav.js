@@ -28,12 +28,18 @@ export default function SubNav(props) {
                </div>
                <div class="Vrt"></div>
                <div class="Pbutton" >
-                   <div class="PBox">Interaction Design</div>
+                   <div class="PBox"
+                   onMouseEnter={() => props.hoverFunction(true)} 
+                   onMouseLeave={() => props.hoverFunction(false)}
+                   >Interaction Design</div>
                    <img class="Arrow" src={Arrow} alt="This is an arrow"/>
                </div>
                <div class="Vrt"></div>
                <div class="Pbutton">
-                   <div class="PBox">Indutrial Design</div>
+                   <div class="PBox"
+                   onMouseEnter={() => props.hoverFunction(true)} 
+                   onMouseLeave={() => props.hoverFunction(false)}
+                   >Indutrial Design</div>
                    <img class="Arrow" src={Arrow} alt="This is an arrow"/>
                </div> 
                <div class="Vrt endline" ></div> 

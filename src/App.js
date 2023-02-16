@@ -17,7 +17,7 @@ function App() {
     <body>
     
       <Nav />
-      <SubNav hover={isHovering} hoverFunction={setisHovering} clickFunction={() => {setIsClicked(!IsClicked)}} />
+      <SubNav hover={isHovering} hoverFunction={setisHovering} clickFunction={() => {setIsClicked(!IsClicked)}} itemclick = {IsItemClicked}/>
       <Article />
       <ServiceDesignMenu  isHovering={isHovering} isClicked={IsClicked} itemlcik={() => setIsItemClicked(!IsItemClicked)} />
       <Example_product IsItemClicked={IsItemClicked}/>

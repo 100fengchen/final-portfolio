@@ -1,6 +1,6 @@
 :root {
   --black:#21243D;
-  --white:#F6F6F6;
+  --white:#e8e7e7;
   --red:#FF7C7C;
 }
 
@@ -11,6 +11,7 @@ body {
   justify-content: space-between;
   flex-direction:column;
   margin: 0px;
+  
 
 }
 
@@ -131,6 +132,7 @@ img{
   
 }
 
+
 .Arrow{
   width: 30px;
   height: auto;
@@ -139,6 +141,12 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+.Pbutton :hover{
+  background-color: var(--white);
+  color: var(--black);
 }
 
 article{
@@ -363,4 +371,61 @@ footer{
   margin-bottom: -1px;
   border-top: 1px solid var(--white);
   border: solid var(--white);
+  
+}
+
+
+.MenuItem:hover{
+
+  background-color: var(--white);
+  color: var(--black);
+}
+
+
+
+.example_product{
+  margin: 0px;
+  height: 100vh;
+
+  
+  
+}
+
+#Bednarc{
+  height: 300px;
+  width: auto;
+  border: 30px solid var(--red);
+  Top: 100px;
+ 
+
+}
+
+
+
+.content{
+  position: relative;
+  top: 10vh;
+  left: 10vw;
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  width: 80vw;
+}
+
+p{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+li{
+  font-size: 16px;
+  font-family: 'Noto Serif Display', serif ;  
+  color: var(--white);
+}
+text{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--white);
 }
