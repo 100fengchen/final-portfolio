@@ -4,6 +4,8 @@ import linkedinLogo from '../visual/Logo_linkedin.svg';
 import IGLogo from '../visual/Logo_IG.svg';
 
 
+
+
 export default function Nav() {  
   return (
     <nav>
@@ -15,7 +17,7 @@ export default function Nav() {
                     <div class="link">Home</div>
                     <div class="link">About</div>
                     <div class="link">Contact</div>
-                    <button onclick="handlePress()">Contact</button>
+                    <button >Contact</button>
                 </div>
                 <div id="menuToggle">
                     <span></span>

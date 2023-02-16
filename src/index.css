@@ -274,7 +274,7 @@ footer{
 
 @media only screen and (max-width: 800px) { 
   .PBox{
-    font-size: 5vw;
+    font-size: 3vw;
   }
 
   #menuToggle span{
