@@ -10,21 +10,19 @@ export default function Nav() {
   return (
     <nav>
        <img src={PersonalLogo} alt="This is my personal logo"/> 
-            <div>
-                <div class="NavContainer">
+        <div class="NavContainer">
                     <img class="smallogo" src={linkedinLogo} alt="This is Linkedin logo"/>
                     <img class="smallogo" src={IGLogo} alt="This is IG logo"/>
-                    <div class="link">Home</div>
-                    <div class="link">About</div>
-                    <div class="link">Contact</div>
+                    <sectoin class="link">Home</sectoin>
+                    <sectoin class="link">About</sectoin>
+                    <sectoin class="link">Contact</sectoin>
                     <button >Contact</button>
                 </div>
                 <div id="menuToggle">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>  
-            </div> 
+                </div>
     </nav>
   )
 }

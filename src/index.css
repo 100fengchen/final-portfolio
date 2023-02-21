@@ -11,6 +11,8 @@ body {
   justify-content: space-between;
   flex-direction:column;
   margin: 0px;
+  min-width:300px;
+  
   
 
 }
@@ -61,6 +63,8 @@ button:hover{
     font-size: 16px;
 }
 
+/* Below are Nav */
+
 nav{
     height: 10vh;
     display: flex;
@@ -101,7 +105,7 @@ img{
     height: 30px;  
 }
 
-
+/* Below are SubNav */
 
 .SubNav{
   display: flex;
@@ -148,6 +152,8 @@ img{
   background-color: var(--white);
   color: var(--black);
 }
+
+/* Below are Content */
 
 article{
   display: flex;
@@ -325,7 +331,7 @@ footer{
   }
 }
 
-@media(max-width:400px){
+
  
 
 
@@ -344,7 +350,7 @@ footer{
   #rectangle{
   display: none;
  }
-}}
+}
 
 
 /* Below are interactive items */
@@ -386,15 +392,11 @@ footer{
 .example_product{
   margin: 0px;
   height: 100vh;
-
-  
-  
 }
 
 #Bednarc{
-  height: 300px;
+  height: 40vh;
   width: auto;
-  border: 30px solid var(--red);
   Top: 100px;
  
 
@@ -403,29 +405,58 @@ footer{
 
 
 .content{
+  background-color: var(--red);
   position: relative;
   top: 10vh;
   left: 10vw;
   display: flex;
   align-items: center;
-  gap: 5vw;
+  gap: 3vw;
   width: 80vw;
 }
 
 p{
-  
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 35vw;
 
 }
 li{
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Noto Serif Display', serif ;  
-  color: var(--white);
+  color: var(--black);
+  background-color: var(--white);
 }
 text{
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  color: var(--white);
+  color: var(--black);
+}
+
+@media(max-height:700px){
+ 
+
+  .Menu{
+    top: 20vh;
+    left: 50%;
+    margin-left: -50vw ;
+    width: 100vw;
+  }
+
+
+
+  .content{
+    flex-direction: column;
+  }
+
+  #Bednarc{
+  width: 80vw;
+  height: auto;
+  }
+
+  p{
+    width: 70vw;
+    font-size: 9px;
+  }
 }

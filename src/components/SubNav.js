@@ -13,7 +13,7 @@ export default function SubNav(props) {
             </div>
             <div class="ProductContainer">
                 <div class="Vrt endline" ></div>
-               <div class="Pbutton"
+               <section class="Pbutton"
                >
                    <div 
                         class="PBox" 
@@ -25,23 +25,23 @@ export default function SubNav(props) {
                     </div>
                    
                    <img class="Arrow" src={Arrow} alt="This is an arrow"/>
-               </div>
+               </section>
                <div class="Vrt"></div>
-               <div class="Pbutton" >
+               <section class="Pbutton" >
                    <div class="PBox"
                    onMouseEnter={() => props.hoverFunction(true)} 
                    onMouseLeave={() => props.hoverFunction(false)}
                    >Interaction Design</div>
                    <img class="Arrow" src={Arrow} alt="This is an arrow"/>
-               </div>
+               </section>
                <div class="Vrt"></div>
-               <div class="Pbutton">
+               <section class="Pbutton">
                    <div class="PBox"
                    onMouseEnter={() => props.hoverFunction(true)} 
                    onMouseLeave={() => props.hoverFunction(false)}
                    >Indutrial Design</div>
                    <img class="Arrow" src={Arrow} alt="This is an arrow"/>
-               </div> 
+               </section> 
                <div class="Vrt endline" ></div> 
            </div>
         </div>
