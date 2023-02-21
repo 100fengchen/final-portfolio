@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/n/static/css/main.85e78912.css",
+    "main.js": "/n/static/js/main.fb371676.js",
+    "static/media/Bendarc_7.jpg": "/n/static/media/Bendarc_7.0f5255f1c73d3a17082e.jpg",
+    "static/media/Potrait.png": "/n/static/media/Potrait.9e3cf45a81dfa35578ca.png",
+    "static/media/Logo_PF.svg": "/n/static/media/Logo_PF.53c33949c2b0dce0018550d509d81c88.svg",
+    "static/media/Logo_linkedin.svg": "/n/static/media/Logo_linkedin.3770105005c84daee751116a09ee107a.svg",
+    "static/media/Logo_IG.svg": "/n/static/media/Logo_IG.8803c7bb69402571165ebc3ef728d211.svg",
+    "index.html": "/n/index.html",
+    "static/media/Arrow.svg": "/n/static/media/Arrow.197a801cbe7697fc03e73456e7def827.svg",
+    "main.85e78912.css.map": "/n/static/css/main.85e78912.css.map",
+    "main.fb371676.js.map": "/n/static/js/main.fb371676.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85e78912.css",
+    "static/js/main.fb371676.js"
+  ]
+}
