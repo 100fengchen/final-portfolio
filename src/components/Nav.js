@@ -17,12 +17,13 @@ export default function Nav() {
                     <sectoin class="link">About</sectoin>
                     <sectoin class="link">Contact</sectoin>
                     <button >Contact</button>
-                </div>
-                <div id="menuToggle">
+                    <div id="menuToggle">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
+                </div>
+                
     </nav>
   )
 }

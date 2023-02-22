@@ -331,12 +331,6 @@ footer{
   }
 }
 
-
- 
-
-
-
-
 @media(max-height:700px){
  
   article{
@@ -391,18 +385,15 @@ footer{
 
 .example_product{
   margin: 0px;
-  height: 100vh;
+  height: auto;
 }
 
 #Bednarc{
-  height: 40vh;
-  width: auto;
+ height: 60vh;
+  width: 30vw;
   Top: 100px;
- 
-
+  object-fit: cover;
 }
-
-
 
 .content{
   background-color: var(--red);
@@ -411,15 +402,39 @@ footer{
   left: 10vw;
   display: flex;
   align-items: center;
-  gap: 3vw;
+  gap: 2vw;
   width: 80vw;
+}
+
+
+
+.productphoto{
+  top: 15vh;
+  position: relative;
+  left: 10vw;
+  width: 80vw;
+  height: auto;
+}
+
+.quote{
+  position: relative;
+  z-index: 1;
+  left: 48vw;
+  top: 20vh;
+  width: 40vw;
+  font-family: 'Noto Serif Display', serif ;
+  font-size: 3vw;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 30px;
+  border: solid var(--white);
 }
 
 p{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 35vw;
+  width: 40vw;
 
 }
 li{
@@ -434,17 +449,38 @@ text{
   color: var(--black);
 }
 
+
+@media(max-width:800px){
+.content{
+flex-direction: column;  
+}
+#Bednarc{
+  height: auto;
+   width: 80vw;
+   Top: 100px;
+   object-fit: cover;
+ }
+
+ p{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 75vw;
+
+}
+
+}
+
+
+
 @media(max-height:700px){
  
-
   .Menu{
     top: 20vh;
     left: 50%;
     margin-left: -50vw ;
     width: 100vw;
   }
-
-
 
   .content{
     flex-direction: column;
