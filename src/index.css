@@ -177,7 +177,6 @@ h1{
   max-height: 100%;
   display: flex;
   justify-content: space-between;
-
   flex-direction: row;
   gap:5vw;
   overflow: hidden;
@@ -188,6 +187,7 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
 }
 
 #potraitbox{
@@ -196,30 +196,29 @@ h1{
 }
 
 .BigName{
-  font-size: 13vh;
+  font-size: 9.5vw;
+  position: relative;
+  white-space: nowrap;
   background: none;
   text-align: left;
   font-family: 'Noto Serif Display', serif ;
   color: var(--white);
   padding-left: 5vw;
+  padding-right: 5vw;
   padding-top: 2vh;
-  line-height: 1;
   transition-duration: 500ms ;
   transition-property: color;
+  line-height: 90%;
+  border: 1vh solid var(--white);
+  border-left: 0px;
+  border-bottom: 0px;
+  border-radius: 0 5vw 0 0;
+  
 }
 
 .BigName:hover{
   background: none;
   color: var(--red);
-}
-
-#rectangle{
-  width:50vw;
-  height:30vh;
-  border: 1vh solid var(--white);
-  left: -20px;
-  border-radius: 0 5vw 0 0;
-  
 }
 
 .Portrait{
@@ -248,45 +247,30 @@ footer{
   right: 10px;
   bottom: 10px
 }
-@media(max-height:800px){
-  
-  .BigName{
-      font-size: 14vh;
-  }
 
-}
-@media(max-width:1400px){
-  #rectangle{
-      width: 65vw;
-      position: relative;
-      
-  }
-}
+
 
 @media(max-width:1000px){
-  
-  .TextContentContainer{
-      gap: 25vh;
-  }
+
   article{
-  width: 80vw;
+  width: 60vw;
   }
   .NavContainer{
       gap: 10px;
   }
-  
-  .BigName{
-      font-size: 13vw;
-      }
   #mywork{
       display: none;
   }
-  #rectangle{
-      width: 90vw;
-  }
 }
 
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 800px) {
+  .BigName{
+    font-size: 10vh;
+    white-space: normal;  
+  }
+.content{flex-direction: column;}
+
+
   .PBox{
     font-size: 3vw;
   }
@@ -331,6 +315,16 @@ footer{
   }
 }
 
+@media(max-width:500px){
+  .BigName{
+    
+    border-radius: 0 20vw 0 0;
+  }
+  article{
+    gap: 1vh;
+  }
+}
+
 @media(max-height:700px){
  
   article{
@@ -341,9 +335,7 @@ footer{
       height: 30px;  
   }
 
-  #rectangle{
-  display: none;
- }
+
 }
 
 
@@ -394,6 +386,23 @@ footer{
   Top: 100px;
   object-fit: cover;
 }
+p{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40vw;
+}
+
+@media (max-width:800px) {
+  #Bednarc{
+     width: 80vw;
+   }
+   p{
+    width: 75vw;
+   }
+
+  
+}
 
 .content{
   background-color: var(--red);
@@ -430,13 +439,7 @@ footer{
   border: solid var(--white);
 }
 
-p{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 40vw;
 
-}
 li{
   font-size: 20px;
   font-family: 'Noto Serif Display', serif ;  
@@ -450,28 +453,6 @@ text{
 }
 
 
-@media(max-width:800px){
-.content{
-flex-direction: column;  
-}
-#Bednarc{
-  height: auto;
-   width: 80vw;
-   Top: 100px;
-   object-fit: cover;
- }
-
- p{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 75vw;
-
-}
-
-}
-
-
 
 @media(max-height:700px){
  
@@ -482,11 +463,8 @@ flex-direction: column;
     width: 100vw;
   }
 
-  .content{
-    flex-direction: column;
-  }
-
   #Bednarc{
+  object-fit: fill;
   width: 80vw;
   height: auto;
   }
