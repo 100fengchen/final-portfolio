@@ -3,13 +3,13 @@ import "./App.css";
 import Nav from './components/Nav';
 import SubNav from "./components/SubNav";
 import Article from "./components/Article";
+import CreatingAnInfromedJourney from "./components/Projects/CreatingAnInfromedJourney"
 
-// import Example_product from './components/Example_product';
 
 function App() {
   const [isHovering, setIsHovering] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
-  const [isItemClicked, setIsItemClicked] = useState(false);
+  const [isCreatingJourneyHovered, setIsCreatingJourneyHovered] = useState(false);
 
 
   return (
@@ -20,15 +20,15 @@ function App() {
           <SubNav
             isHovering={isHovering}
             setIsHovering={setIsHovering}
-            itemClick={isItemClicked}
+            setIsCreatingJourneyHovered={setIsCreatingJourneyHovered}
           />
         </div>
         <Article
         isHovering={isHovering}
         setIsHovering={setIsHovering}
-        itemClick={isItemClicked}
-         />
         
+         />
+         {isCreatingJourneyHovered && <CreatingAnInfromedJourney/>}
       </body>
     </>
   );

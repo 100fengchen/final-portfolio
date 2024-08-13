@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import Arrow from '../visual/Arrow.svg';
 import ServiceDesignMenu from './ServiceDesignMenu';
 
-export default function SubNav({ setIsHovering, isHovering, itemClick }) {
+export default function SubNav({ setIsHovering, isHovering, setIsCreatingJourneyHovered}) {
 
-    // const [buttonPosition, setButtonPosition] = useState({ x: 0, y: 0 });
 
     const handleMouseEnterButton = (e) => {
         setIsHovering(true);
@@ -20,6 +19,14 @@ export default function SubNav({ setIsHovering, isHovering, itemClick }) {
 
     const handleMouseLeaveMenu = () => {
         setIsHovering(false); // Close the menu when the mouse leaves it
+    };
+
+    const handleMouseEnterJourney = () => {
+        setIsCreatingJourneyHovered(true);
+    };
+
+    const handleMouseLeaveJourney = () => {
+        setIsCreatingJourneyHovered(false);
     };
 
     return (
@@ -44,9 +51,11 @@ export default function SubNav({ setIsHovering, isHovering, itemClick }) {
                             <ServiceDesignMenu
                                 onMouseEnter={handleMouseEnterMenu}
                                 onMouseLeave={handleMouseLeaveMenu}
-                                isClick={itemClick}
-                            />
+                                onCreatingJourneyEnter={handleMouseEnterJourney}
+                                onCreatingJourneyLeave={handleMouseLeaveJourney}
+                          />
                             )}
+                       
                         <div className="testbox"></div>
                         <div className="Vrt"></div>
                         <section className="Pbutton">

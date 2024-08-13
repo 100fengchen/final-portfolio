@@ -383,6 +383,15 @@ footer{
 
 /* Below are interactive items */
 
+/* .testbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 20px;
+  
+} */
+
+
 .Menu{
   position: absolute;
   top: 10vh;
@@ -412,6 +421,7 @@ footer{
   height: 10vh;
   margin-bottom: -1px;
   border-top: 1px solid var(--white);
+  /* border: solid var(--white); */
 
 }
 
@@ -527,11 +537,12 @@ text{
 /* below are projects */
 /* below are projects */
 
-.ProductFullPage{
-  display: none;
+.ProductFullPage {
+  display: flex;
   position: absolute;
   top: 20vh;
   height: 100vh;
   width: 100vw;
-  background-color: #2ed5eb;
+  background-color: #FF7C7C;
+  
 }

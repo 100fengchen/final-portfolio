@@ -1,6 +1,6 @@
 import React from 'react'
 import Portrait from '../visual/Potrait.png'
-import CreatingAnInfromedJourney from "./Projects/CreatingAnInfromedJourney"
+
 
 export default function Article({isHovering, setIsHovering, itemClick}) {
   
@@ -24,7 +24,7 @@ export default function Article({isHovering, setIsHovering, itemClick}) {
             <img class="Portrait" src={Portrait} alt="My handsome selfie hehe"/>
             </div>
             <footer>2022 All rights reserved @Pai-Feng, Chen</footer>  
-        <CreatingAnInfromedJourney />
+        
     </div>
   )
 }
