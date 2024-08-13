@@ -1,51 +1,68 @@
-import React,{useState} from 'react'
-import Arrow from '../visual/Arrow.svg'
+import React, { useState } from 'react';
+import Arrow from '../visual/Arrow.svg';
+import ServiceDesignMenu from './ServiceDesignMenu';
 
+export default function SubNav({ setIsHovering, isHovering, itemClick }) {
 
-// test test
-export default function SubNav(props) {
+    // const [buttonPosition, setButtonPosition] = useState({ x: 0, y: 0 });
+
+    const handleMouseEnterButton = (e) => {
+        setIsHovering(true);
+    };  
+
+    const handleMouseLeaveButton = () => {
+        setTimeout(setIsHovering(false) , 1000); // Small delay to allow the mouse to move to the dropdown menu
+    };
+
+    const handleMouseEnterMenu = () => {
+        setIsHovering(true); // Keep the menu open when the mouse is over it
+    };
+
+    const handleMouseLeaveMenu = () => {
+        setIsHovering(false); // Close the menu when the mouse leaves it
+    };
+
     return (
-    <div class="subnavcontainer">
-        <div class="line"></div>
-        <div class="SubNav">
-            <div class="Pbutton" id="mywork">
-                <div class="PBox" >My Work</div>
-            </div>
-            <div class="ProductContainer">
-                <div class="Vrt endline" ></div>
-               <section class="Pbutton"
-               >
-                   <div 
-                        class="PBox" 
-                        onClick={() => props.clickFunction()}   
-                        onMouseEnter={() => props.hoverFunction(true)} 
-                        onMouseLeave={() => props.hoverFunction(false)}
+        <div className="subnavcontainer">
+            <div className="line"></div>
+            <div className="SubNav">
+                <div className="Pbutton" id="mywork">
+                    <div className="PBox">My Work</div>
+                </div>
+                <div className="Itemshow">
+                    <div className="ProductContainer">
+                        <div className="Vrt endline front"></div>
+                        <section
+                            className="Pbutton"
+                            onMouseEnter={handleMouseEnterButton}
+                            onMouseLeave={handleMouseLeaveButton}
                         >
-                            Service Design
+                            <div className="PBox">Service Design</div>
+                            <img className="Arrow" src={Arrow} alt="This is an arrow" /> 
+                        </section>
+                        {isHovering && (
+                            <ServiceDesignMenu
+                                onMouseEnter={handleMouseEnterMenu}
+                                onMouseLeave={handleMouseLeaveMenu}
+                                isClick={itemClick}
+                            />
+                            )}
+                        <div className="testbox"></div>
+                        <div className="Vrt"></div>
+                        <section className="Pbutton">
+                            <div className="PBox">Interaction Design</div>
+                            <img className="Arrow" src={Arrow} alt="This is an arrow" />
+                        </section>
+                        <div className="Vrt"></div>
+                        <section className="Pbutton">
+                            <div className="PBox">Industrial Design</div>
+                            <img className="Arrow" src={Arrow} alt="This is an arrow" />
+                        </section>
+                        <div className="Vrt endline"></div>
                     </div>
-                   
-                   <img class="Arrow" src={Arrow} alt="This is an arrow"/>
-               </section>
-               <div class="Vrt"></div>
-               <section class="Pbutton" >
-                   <div class="PBox"
-                   onMouseEnter={() => props.hoverFunction(true)} 
-                   onMouseLeave={() => props.hoverFunction(false)}
-                   >Interaction Design</div>
-                   <img class="Arrow" src={Arrow} alt="This is an arrow"/>
-               </section>
-               <div class="Vrt"></div>
-               <section class="Pbutton">
-                   <div class="PBox"
-                   onMouseEnter={() => props.hoverFunction(true)} 
-                   onMouseLeave={() => props.hoverFunction(false)}
-                   >Indutrial Design</div>
-                   <img class="Arrow" src={Arrow} alt="This is an arrow"/>
-               </section> 
-               <div class="Vrt endline" ></div> 
-           </div>
+                </div>
+            </div>
+            <div className="line"></div>
         </div>
-            <div class="line"></div> 
-    </div>
-  )
+    );
 }

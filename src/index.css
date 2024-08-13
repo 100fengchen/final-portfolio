@@ -12,8 +12,6 @@ body {
   flex-direction:column;
   margin: 0px;
   min-width:300px;
-  
-  
 
 }
 
@@ -90,7 +88,7 @@ nav{
 
 
 .Vrt{
-    border-left: 2px solid var(--white);
+    border-left: 1px solid var(--white);
     left: 100px;
 }
 
@@ -106,6 +104,10 @@ img{
 }
 
 /* Below are SubNav */
+.Itemshow{
+  display: flex;
+  justify-content: space-between;
+}
 
 .SubNav{
   display: flex;
@@ -115,12 +117,9 @@ img{
   height: 10vh;
 }
 
-
-
 .ProductContainer{
   display: flex;
   justify-content: space-between;
-  gap: 40px;
 }
 
 .PName{
@@ -130,7 +129,7 @@ img{
 }
 
 .PBox{
-  font-size: 28px;
+  font-size: 26px;
   color: var(--white);
   font-family: 'Noto Serif Display', serif ;
   
@@ -145,13 +144,31 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0px 1vw 0px 1vw;
+  gap: 5vh;
+  
 }
 
 
-.Pbutton :hover{
+.Pbutton:not(#mywork):hover{
   background-color: var(--white);
+}
+
+.Pbutton:not(#mywork):hover .PBox {
   color: var(--black);
 }
+
+
+.Pbutton:hover .Arrow{
+  transform: rotate(180deg);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.Pbutton:not(:hover) .Arrow {
+  transform: rotate(0deg);
+  transition: all 0.4s ease-in-out 0s;
+}
+
 
 /* Below are Content */
 
@@ -251,6 +268,23 @@ footer{
 
 
 @media(max-width:1000px){
+  
+  .SubNav{
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .PBox{
+    font-size: 16pt;
+  }
+
+  .ProductContainer{
+    width: 90vw;
+  }
+
+  .Pbutton:hover .PBox {
+    color: var(--black);
+  }
 
   article{
   width: 60vw;
@@ -258,13 +292,29 @@ footer{
   .NavContainer{
       gap: 10px;
   }
+
   #mywork{
       display: none;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .BigName{
+
+.SubNav{
+  width: 100vw;
+}
+.ProductContainer{
+  width: 100vw;
+}
+.Pbutton{
+  justify-content: center;
+  width: 33vw;
+  padding:0;
+}
+
+
+
+.BigName{
     font-size: 10vh;
     white-space: normal;  
   }
@@ -272,16 +322,13 @@ footer{
 
 
   .PBox{
-    font-size: 3vw;
+    font-size: 14pt;
   }
 
   #menuToggle span{
       display: block;
   }
   
-  .ProductContainer{
-    gap: 5vw;
-  }
 
   .Arrow{
       display: none;
@@ -299,9 +346,7 @@ footer{
       display: none;
   }
 
-  .Vrt{
-      padding-right: 20px;
-  }
+
   article{
       width: 90vw;
       padding-left: 5vw;
@@ -310,9 +355,6 @@ footer{
       display: none;
   }
 
-  .SubNav{
-      justify-content: space-around;
-  }
 }
 
 @media(max-width:500px){
@@ -343,32 +385,38 @@ footer{
 
 .Menu{
   position: absolute;
-  top: 25vh;
-  right: 5vw;
-  background-color: var(--black);
+  top: 10vh;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 35vw;
+  
+}
+
+.Gap{
+  background-color:transparent;
+  height: 1vh;
 }
 
 .MenuItem{
-  
   display: flex;
-  justify-content: center;
+  background-color: var(--black);
+  border: 1px solid;
+  border-color: white;
+  justify-content: flex-start;
+  padding-left: 1vw;
   align-items: center;
-  font-size: 28px;  vertical-align: middle;
+  font-size: 28px;  
   color: var(--white);
   font-family: 'Noto Serif Display', serif ;  
   height: 10vh;
   margin-bottom: -1px;
   border-top: 1px solid var(--white);
-  border: solid var(--white);
-  
+
 }
 
 
 .MenuItem:hover{
-
   background-color: var(--white);
   color: var(--black);
 }
@@ -394,6 +442,7 @@ p{
 }
 
 @media (max-width:800px) {
+  
   #Bednarc{
      width: 80vw;
    }
@@ -473,4 +522,16 @@ text{
     width: 70vw;
     font-size: 9px;
   }
+}
+
+/* below are projects */
+/* below are projects */
+
+.ProductFullPage{
+  display: none;
+  position: absolute;
+  top: 20vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2ed5eb;
 }

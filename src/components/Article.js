@@ -1,7 +1,12 @@
 import React from 'react'
 import Portrait from '../visual/Potrait.png'
+import CreatingAnInfromedJourney from "./Projects/CreatingAnInfromedJourney"
 
-export default function Article() {
+export default function Article({isHovering, setIsHovering, itemClick}) {
+  
+   
+  
+  
   return ( 
     <div class="AllContentContainer">
             <div class="TextContentContainer">
@@ -19,6 +24,7 @@ export default function Article() {
             <img class="Portrait" src={Portrait} alt="My handsome selfie hehe"/>
             </div>
             <footer>2022 All rights reserved @Pai-Feng, Chen</footer>  
+        <CreatingAnInfromedJourney />
     </div>
   )
 }

@@ -1,22 +1,14 @@
-import React ,{useState} from 'react';
+import React from 'react';
 
-
-export default function ServiceDesignMenu (props) {
-  // const[isSubHovering, setisSubHovering] = useState(false);
-  // const[IsSubClicked, setIsSubClicked  ] = useState(false);
- 
- 
-
-
+export default function ServiceDesignMenu({ onMouseEnter, onMouseLeave }) { 
   return (
-    <div class="Menu" style={{
-      'display': props.isHovering  || props.isClicked ? 'block' : 'none', 
-      }} >
-        <section class="MenuItem" 
-        onClick={() => props.itemlcik()}
-        > Example 1 </section>
-        <section class="MenuItem"> Example 1 </section>
-        <section class="MenuItem"> Example 1 </section>
+    <div className="Menu"  
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}>
+      <div className = "Gap"> </div>
+      <section  type="button" className="MenuItem" onMouseEnter={onMouseEnter}> Creating an informed journey </section >
+      <section  type="button" className="MenuItem"> Meet Luotsi </section > 
+      <section  type="button" className="MenuItem"> SpotOn </section >
     </div>
-  )
+  );
 }
