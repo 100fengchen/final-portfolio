@@ -111,6 +111,7 @@ img{
 
 .SubNav{
   z-index: 2;
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 90vw;
@@ -163,7 +164,7 @@ img{
 
 
 .Pbutton .Arrow {
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .Pbutton:hover .Arrow,
@@ -303,6 +304,7 @@ footer{
 
 .SubNav{
   width: 100vw;
+  position: relative;
 }
 .ProductContainer{
   width: 100vw;
@@ -384,23 +386,13 @@ footer{
 
 /* Below are interactive items */
 
-/* .testbox{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  column-gap: 20px;
-  
-} */
-
-
 .Menu{
   position: absolute;
   top: 10vh;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  width: 35vw;
-  
+  margin-left: -1vw;
 }
 
 .Gap{

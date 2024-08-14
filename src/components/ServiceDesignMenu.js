@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ServiceDesignMenu({ onMouseEnter, onMouseLeave, onCreatingJourneyEnter, onCreatingJourneyLeave, hoveredItem, sethoveredItem ,setIsClicked}) { 
+export default function ServiceDesignMenu({ onMouseEnter, onMouseLeave, onCreatingJourneyEnter, onCreatingJourneyLeave, hoveredItem, sethoveredItem ,setIsClicked, containerWidth}) { 
   
   const handleMouseEnter =(itemId)=>{
     sethoveredItem (itemId);
@@ -18,12 +18,16 @@ export default function ServiceDesignMenu({ onMouseEnter, onMouseLeave, onCreati
   return (
     <div className="Menu"  
       onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}>
+      onMouseLeave={onMouseLeave}
+      style={{
+        width:containerWidth
+      }}
+      >
       <div className = "Gap"> </div>
       <button  type="button" className="MenuItem" 
       onMouseEnter={onCreatingJourneyEnter}
       onMouseLeave={onCreatingJourneyLeave}
-        > Creating an informed journey </button >
+        >Creating an informed journey</button >
 
       <button  type="button" className="MenuItem"> Meet Luotsi </button > 
 
@@ -36,6 +40,28 @@ export default function ServiceDesignMenu({ onMouseEnter, onMouseLeave, onCreati
       > 
       SpotOn 
       </button >
+
+      <button  
+      type="button" 
+      className="MenuItem"
+      // onMouseEnter={() => handleMouseEnter('SpotOn')}
+      // onMouseLeave={handleMouseLeave}
+      // onClick={()=>handleMousecliked('SpotOn')}
+      > 
+      Hopealinja 
+      </button >
+
+      <button  
+      type="button" 
+      className="MenuItem"
+      // onMouseEnter={() => handleMouseEnter('SpotOn')}
+      // onMouseLeave={handleMouseLeave}
+      // onClick={()=>handleMousecliked('SpotOn')}
+      > 
+      Panorama 
+      </button >
+
+
     </div>
   );
 }
