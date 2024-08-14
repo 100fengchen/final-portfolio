@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Arrow from '../visual/Arrow.svg';
 import ServiceDesignMenu from './ServiceDesignMenu';
 
-export default function SubNav({ setIsHovering, isHovering, setIsCreatingJourneyHovered}) {
+export default function SubNav({ setIsHovering, isHovering,setIsCreatingJourneyHovered, hoveredItem, sethoveredItem, setIsClicked}) {
 
 
     const handleMouseEnterButton = (e) => {
@@ -29,6 +29,8 @@ export default function SubNav({ setIsHovering, isHovering, setIsCreatingJourney
         setIsCreatingJourneyHovered(false);
     };
 
+
+
     return (
         <div className="subnavcontainer">
             <div className="line"></div>
@@ -45,23 +47,33 @@ export default function SubNav({ setIsHovering, isHovering, setIsCreatingJourney
                             onMouseLeave={handleMouseLeaveButton}
                         >
                             <div className="PBox">Service Design</div>
-                            <img className="Arrow" src={Arrow} alt="This is an arrow" /> 
+                            <img 
+                            className="Arrow" 
+                            src={Arrow} 
+                            alt="This is an arrow" 
+                            style={{
+                                transform: isHovering ? 'rotate(180deg)' : 'rotate(0deg)',
+                              }}
+                            /> 
                         </section>
                         {isHovering && (
                             <ServiceDesignMenu
+                                hoveredItem={hoveredItem}
+                                sethoveredItem={sethoveredItem} 
                                 onMouseEnter={handleMouseEnterMenu}
                                 onMouseLeave={handleMouseLeaveMenu}
                                 onCreatingJourneyEnter={handleMouseEnterJourney}
                                 onCreatingJourneyLeave={handleMouseLeaveJourney}
-                          />
+                                setIsClicked={setIsClicked}             
+                                />
                             )}
                        
                         <div className="testbox"></div>
                         <div className="Vrt"></div>
-                        <section className="Pbutton">
+                        {/* <section className="Pbutton">
                             <div className="PBox">Interaction Design</div>
                             <img className="Arrow" src={Arrow} alt="This is an arrow" />
-                        </section>
+                        </section> */}
                         <div className="Vrt"></div>
                         <section className="Pbutton">
                             <div className="PBox">Industrial Design</div>

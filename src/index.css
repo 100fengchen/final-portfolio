@@ -110,11 +110,14 @@ img{
 }
 
 .SubNav{
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   width: 90vw;
   margin: auto;
   height: 10vh;
+  background-color: var(--black);
+
 }
 
 .ProductContainer{
@@ -159,16 +162,14 @@ img{
 }
 
 
-.Pbutton:hover .Arrow{
+.Pbutton .Arrow {
+  transition: transform 0.4s ease-in-out;
+}
+
+.Pbutton:hover .Arrow,
+.Pbutton.hovering .Arrow {
   transform: rotate(180deg);
-  transition: all 0.4s ease-in-out 0s;
 }
-
-.Pbutton:not(:hover) .Arrow {
-  transform: rotate(0deg);
-  transition: all 0.4s ease-in-out 0s;
-}
-
 
 /* Below are Content */
 
@@ -410,8 +411,7 @@ footer{
 .MenuItem{
   display: flex;
   background-color: var(--black);
-  border: 1px solid;
-  border-color: white;
+  border: 1px solid var(--white);
   justify-content: flex-start;
   padding-left: 1vw;
   align-items: center;
@@ -421,7 +421,8 @@ footer{
   height: 10vh;
   margin-bottom: -1px;
   border-top: 1px solid var(--white);
-  /* border: solid var(--white); */
+  border-radius: 0px;
+  transition: none;
 
 }
 
@@ -537,12 +538,15 @@ text{
 /* below are projects */
 /* below are projects */
 
+
 .ProductFullPage {
   display: flex;
   position: absolute;
-  top: 20vh;
+  top: calc(20vh + 1px);
   height: 100vh;
   width: 100vw;
-  background-color: #FF7C7C;
+  background-color: var(--black);
+  border-top: 1px solid var(--white);
   
 }
+
