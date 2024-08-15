@@ -98,14 +98,8 @@ export default function SubNav({ setIsHovering, isHovering,setIsCreatingJourneyH
                               }}
                             /> 
                         </div>
-                        
-                       
                         <div className="testbox"></div>
                         <div className="Vrt"></div>
-                        {/* <div className="Pbutton">
-                            <div className="PBox">Interaction Design</div>
-                            <img className="Arrow" src={Arrow} alt="This is an arrow" />
-                        </div> */}
                         <div className="Vrt"></div>
                         <div className="Pbutton">
                             <div className="PBox">Industrial Design</div>
