@@ -1,6 +1,7 @@
 import React, { useState, useEffect ,useRef } from 'react';
 import Arrow from '../visual/Arrow.svg';
 import ServiceDesignMenu from './ServiceDesignMenu';
+import PersonalLogo from '../visual/Logo_PF.svg';
 
 export default function SubNav({ setIsHovering, isHovering,setIsCreatingJourneyHovered, hoveredItem, sethoveredItem, setIsClicked}) {
 
@@ -30,9 +31,6 @@ export default function SubNav({ setIsHovering, isHovering,setIsCreatingJourneyH
 
 
 
-
-
-    
     
     const handleMouseEnterButton = (e) => {
         setIsHovering(true);
@@ -65,7 +63,8 @@ export default function SubNav({ setIsHovering, isHovering,setIsCreatingJourneyH
             <div className="line"></div>
             <div className="SubNav">
                 <div className="Pbutton" id="mywork">
-                    <div className="PBox">My Work</div>
+                    <img src={PersonalLogo} alt="This is my personal logo" className='pLogo' /> 
+                    <div className="PBox">Pai-Feng Chen's Work</div>  
                 </div>
                 <div className="Itemshow">
                     <div className="ProductContainer"  ref={productContainerRef}>
@@ -81,8 +80,6 @@ export default function SubNav({ setIsHovering, isHovering,setIsCreatingJourneyH
                                 sethoveredItem={sethoveredItem} 
                                 onMouseEnter={handleMouseEnterMenu}
                                 onMouseLeave={handleMouseLeaveMenu}
-                                onCreatingJourneyEnter={handleMouseEnterJourney}
-                                onCreatingJourneyLeave={handleMouseLeaveJourney}
                                 setIsClicked={setIsClicked}
                                 containerWidth = {containerWidth}
                                 

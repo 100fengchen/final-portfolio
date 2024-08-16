@@ -1,9 +1,13 @@
 :root {
-  --black:#21243D;
+  --black:#11131f;   
   --white:#e8e7e7;
   --red:#FF7C7C;
 }
 
+
+
+
+/* // 21243D */
 
 body {
   background-color: var(--black);
@@ -64,9 +68,9 @@ button:hover{
 /* Below are Nav */
 
 nav{
-    height: 10vh;
+    height: 5vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 90vw;
     margin: auto;
@@ -98,9 +102,15 @@ img{
     height: 50px;  
 }
 
+.pLogo{
+  height: 45px ;
+  width: auto;
+  margin-left: -2vw;
+}
+
 .smallogo{
-    width: 30px;
-    height: 30px;  
+    width: auto;
+    height: 16px;  
 }
 
 /* Below are SubNav */
@@ -185,14 +195,15 @@ article{
 }
 
 h1{
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300 ;
   color: var(--white);
- 
 }
 
 .AllContentContainer{
-  height: 79vh;
+  height: 84vh;
   max-height: 100%;
   display: flex;
   justify-content: space-between;
@@ -258,7 +269,7 @@ h1{
 }
 
 
-footer{
+.footer{
   font-size: 10px;
   color: var(--white);
   font-family: 'Open Sans', sans-serif;
@@ -492,13 +503,13 @@ p{
 }
 
 
-li{
+.li{
   font-size: 20px;
   font-family: 'Noto Serif Display', serif ;  
   color: var(--black);
   background-color: var(--white);
 }
-text{
+.text{
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   color: var(--black);
@@ -532,13 +543,62 @@ text{
 
 
 .ProductFullPage {
+  overflow: hidden;
   display: flex;
   position: absolute;
-  top: calc(20vh + 1px);
-  height: 100vh;
+  top: calc(15vh + 1px);
+  height: 78vh;
   width: 100vw;
   background-color: var(--black);
   border-top: 1px solid var(--white);
+}
+
+/* .boundingBox{
   
+} */
+
+.pageBox{
+  background-color: var(--black);
+  border: solid var(--white);
+  border-width: 1.5px;
+  flex-direction: column;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 66vh;
+  width:45vw;
+  top: 6vh;
+  left: 6vw;
+
+  box-shadow: -10px 18px 20px rgb(26, 181, 163)
+}
+
+.CAIJcover{
+  width: 45vw;
+  border-radius: 10.5px;
+  height: 40vh;
+  object-fit: cover;
+  object-position: top ;
+}
+
+
+
+.description{
+  /* position: absolute; */
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.extraInfo{
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vh;
+}
+
+a{
+  color: var(--white);
+  font-style: italic;
+  margin-left: 10px;
 }
 

@@ -24,11 +24,13 @@ export default function ServiceDesignMenu({ onMouseEnter, onMouseLeave, onCreati
       }}
       >
       <div className = "Gap"> </div>
-      <button  type="button" className="MenuItem" 
-      onMouseEnter={onCreatingJourneyEnter}
-      onMouseLeave={onCreatingJourneyLeave}
-        >Creating an informed journey</button >
-
+      <button  
+        type="button" 
+        className="MenuItem" 
+        onMouseEnter={() => handleMouseEnter('CreatingAnInformedJourney')}
+        onMouseLeave={handleMouseLeave}
+        >Creating an informed journey
+        </button >
       <button  type="button" className="MenuItem"> Meet Luotsi </button > 
 
       <button  
