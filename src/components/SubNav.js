@@ -64,7 +64,7 @@ export default function SubNav({ setIsHovering, isHovering,setIsCreatingJourneyH
             <div className="SubNav">
                 <div className="Pbutton" id="mywork">
                     <img src={PersonalLogo} alt="This is my personal logo" className='pLogo' /> 
-                    <div className="PBox">Pai-Feng Chen's Work</div>  
+                    <div className="PBox">Pai-Feng Chen's Work  (work in progres) </div>  
                 </div>
                 <div className="Itemshow">
                     <div className="ProductContainer"  ref={productContainerRef}>
