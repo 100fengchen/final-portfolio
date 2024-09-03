@@ -58,6 +58,23 @@ button{
 button:hover{
     background-color: var(--red);
 }
+.smallogo{
+  
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    transition-duration: 500ms ;
+    border-radius: 3px;
+   
+}
+
+.smallogo:hover{
+  
+  background-color: var(--red);
+}
+
 
 .link{
     color: var(--white);
@@ -623,6 +640,7 @@ p{
   padding-left: 2vw;
   padding-right: 2vw;
   padding-bottom: 1vh;
+  color: #6c71ac;
 }
 
 a{

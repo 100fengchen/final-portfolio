@@ -9,11 +9,9 @@ export default function Nav() {
     <nav>
        
         <div class="NavContainer">
-                    <img class="smallogo" src={linkedinLogo} alt="This is Linkedin logo"/>
-                    <img class="smallogo" src={IGLogo} alt="This is IG logo"/>
-                    <sectoin class="link">Home</sectoin>
-                    <sectoin class="link">About</sectoin>
-                    <sectoin class="link">Contact</sectoin>
+                    <button class="smallogo" src={linkedinLogo} alt="This is Linkedin logo"/>
+                    <button class="smallogo" src={IGLogo} alt="This is IG logo"/>
+               
                     <button >Contact</button>
                     <div id="menuToggle">
                     <span></span>
