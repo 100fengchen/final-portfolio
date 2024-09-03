@@ -30,9 +30,8 @@ export default function SubNav({ setIsHovering, isHovering,setIsCreatingJourneyH
     }, []);
 
 
-
     
-    const handleMouseEnterButton = (e) => {
+    const handleMouseEnterButton = () => {
         setIsHovering(true);
     };  
 
@@ -48,16 +47,7 @@ export default function SubNav({ setIsHovering, isHovering,setIsCreatingJourneyH
         setIsHovering(false); // Close the menu when the mouse leaves it
     };
 
-    const handleMouseEnterJourney = () => {
-        setIsCreatingJourneyHovered(true);
-    };
-
-    const handleMouseLeaveJourney = () => {
-        setIsCreatingJourneyHovered(false);
-    };
-
-
-
+  
     return (
         <div className="subnavcontainer">
             <div className="line"></div>

@@ -31,7 +31,12 @@ export default function ServiceDesignMenu({ onMouseEnter, onMouseLeave, onCreati
         onMouseLeave={handleMouseLeave}
         >Creating an informed journey
         </button >
-      <button  type="button" className="MenuItem"> Meet Luotsi </button > 
+      <button  
+        type="button" 
+        className="MenuItem"
+        onMouseEnter={() => handleMouseEnter('MeetLuotsi')}
+        onMouseLeave={handleMouseLeave}
+        > Meet Luotsi </button > 
 
       <button  
       type="button" 

@@ -1,12 +1,8 @@
 import React from 'react'
 import Portrait from '../visual/Potrait.png'
 
-
 export default function Article({isHovering, setIsHovering, itemClick}) {
-  
-   
-  
-  
+
   return ( 
     <div class="AllContentContainer">
             <div class="TextContentContainer">

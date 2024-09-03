@@ -10,7 +10,9 @@ export default function CreatingAnInformedJourney() {
         </h1>
         <h1 className='extraInfo'>
             Partner with
-            <a href="https://lvm.fi/en/home" target="_blank" rel="noopener noreferrer" className='link'>Finnish Ministry of Transport and Communications (LVM) </a> 
+            <a className='link'>Finnish Ministry of Transport and Communications (LVM)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            Year
+            <a className='link'>2023</a> 
         </h1>  
       </div>
     </div>

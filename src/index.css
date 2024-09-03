@@ -62,7 +62,8 @@ button:hover{
 .link{
     color: var(--white);
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 300 ;
 }
 
 /* Below are Nav */
@@ -602,6 +603,15 @@ p{
   object-position: bottom ;
   background-color: white;
 }
+.MLcover{
+  width: 45vw;
+  border-radius: 10.5px;
+  height: 40vh;
+  object-fit: cover;
+  object-position: bottom ;
+  background-color: white;
+}
+
 
 .description{
   /* position: absolute; */

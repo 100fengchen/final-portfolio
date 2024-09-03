@@ -6,6 +6,7 @@ import Article from "./components/Article";
 import CreatingAnInfromedJourney from "./components/Projects/CreatingAnInfromedJourney";
 import SpotOn from "./components/Projects/SpotOn";
 import SpotOnContent from "./components/Projects/SpotOnContent";
+import MeetLuotsi from "./components/Projects/MeetLuotsi";
 
 
 function App() {
@@ -43,10 +44,10 @@ function App() {
                                 />
         }
 
-        {hoveredItem === 'CreatingAnInformedJourney' && <CreatingAnInfromedJourney />
- }
+        {hoveredItem === 'CreatingAnInformedJourney' && <CreatingAnInfromedJourney />}
         {hoveredItem === 'SpotOn' && <SpotOn />}
-        {isClickedItem === 'SpotOnContent' && <SpotOn />}
+        {hoveredItem === 'MeetLuotsi' && <MeetLuotsi />}
+        {/* {isClickedItem === 'SpotOnContent' && <SpotOn />} */}
       </body>
     </>
   );

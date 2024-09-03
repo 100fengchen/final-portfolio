@@ -4,8 +4,6 @@ import linkedinLogo from '../visual/Logo_linkedin.svg';
 import IGLogo from '../visual/Logo_IG.svg';
 
 
-
-
 export default function Nav() {  
   return (
     <nav>
