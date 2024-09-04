@@ -583,13 +583,11 @@ p{
   border-top: 1px solid var(--white);
 }
 
-/* .boundingBox{
-  
-} */
+
 
 .pageBox{
   background-color: var(--black);
-  border: solid var(--white);
+  border: solid transparent;
   border-width: 1.5px;
   flex-direction: column;
   border-radius: 10px;
@@ -598,14 +596,14 @@ p{
   position: relative;
   height: 66vh;
   width:45vw;
-  top: 6vh;
-  left: 6vw;
+  top: 10vh;
+  left: 10vw;
 
   /* box-shadow: -10px 18px 20px rgb(26, 181, 163) */
 }
 
 .CAIJcover{
-  width: 45vw;
+  width: 40vw;
   border-radius: 10.5px;
   height: 40vh;
   object-fit: cover;
@@ -613,32 +611,24 @@ p{
 }
 
 .SpotOnCover{
-  width: 45vw;
+  width: 40vw;
   border-radius: 10.5px;
   height: 40vh;
   object-fit: cover;
   object-position: bottom ;
-  background-color: white;
 }
-.MLcover{
-  width: 45vw;
-  border-radius: 10.5px;
-  height: 40vh;
-  object-fit: cover;
-  object-position: bottom ;
-  background-color: white;
-}
+
 
 
 .description{
-  /* position: absolute; */
-  padding-left: 2vw;
-  padding-right: 2vw;
+  /* padding-left: 2vw;
+  padding-right: 2vw; */
+  width: 40vw;
 }
 
 .extraInfo{
-  padding-left: 2vw;
-  padding-right: 2vw;
+  /* padding-left: 2vw;
+  padding-right: 2vw; */
   padding-bottom: 1vh;
   color: #868789;
 }
