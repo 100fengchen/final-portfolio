@@ -1,5 +1,5 @@
 :root {
-  --black:#11131f;   
+  --black:#11131d;   
   --white:#e8e7e7;
   --red:#FF7C7C;
 }
@@ -565,6 +565,7 @@ p{
   p{
     width: 70vw;
     font-size: 9px;
+    
   }
 }
 
@@ -604,7 +605,7 @@ p{
 
 .CAIJcover{
   width: 40vw;
-  border-radius: 10.5px;
+  border-radius: 5px;
   height: 40vh;
   object-fit: cover;
   object-position: top ;
@@ -612,7 +613,7 @@ p{
 
 .SpotOnCover{
   width: 40vw;
-  border-radius: 10.5px;
+  border-radius: 5px;
   height: 40vh;
   object-fit: cover;
   object-position: bottom ;
