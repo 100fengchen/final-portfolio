@@ -51,9 +51,8 @@ export default function ServiceDesignMenu({ onMouseEnter, onMouseLeave, onCreati
       <button  
       type="button" 
       className="MenuItem"
-      // onMouseEnter={() => handleMouseEnter('SpotOn')}
-      // onMouseLeave={handleMouseLeave}
-      // onClick={()=>handleMousecliked('SpotOn')}
+      onMouseEnter={() => handleMouseEnter('HopeaLinja')}
+      onMouseLeave={handleMouseLeave}
       > 
       Hopealinja 
       </button >
@@ -61,9 +60,8 @@ export default function ServiceDesignMenu({ onMouseEnter, onMouseLeave, onCreati
       <button  
       type="button" 
       className="MenuItem"
-      // onMouseEnter={() => handleMouseEnter('SpotOn')}
-      // onMouseLeave={handleMouseLeave}
-      // onClick={()=>handleMousecliked('SpotOn')}
+      onMouseEnter={() => handleMouseEnter('Panorama')}
+      onMouseLeave={handleMouseLeave}
       > 
       Panorama 
       </button >

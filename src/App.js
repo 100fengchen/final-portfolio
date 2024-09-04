@@ -7,7 +7,8 @@ import CreatingAnInfromedJourney from "./components/Projects/CreatingAnInfromedJ
 import SpotOn from "./components/Projects/SpotOn";
 import SpotOnContent from "./components/Projects/SpotOnContent";
 import MeetLuotsi from "./components/Projects/MeetLuotsi";
-
+import HopeaLinja from "./components/Projects/HopeaLinja";
+import Panorama from "./components/Projects/Panorama";
 
 function App() {
   const [isHovering, setIsHovering] = useState(false);
@@ -47,6 +48,8 @@ function App() {
         {hoveredItem === 'CreatingAnInformedJourney' && <CreatingAnInfromedJourney />}
         {hoveredItem === 'SpotOn' && <SpotOn />}
         {hoveredItem === 'MeetLuotsi' && <MeetLuotsi />}
+        {hoveredItem === 'HopeaLinja' && <HopeaLinja />}
+        {hoveredItem === 'Panorama' && <Panorama />}
         {/* {isClickedItem === 'SpotOnContent' && <SpotOn />} */}
       </body>
     </>
