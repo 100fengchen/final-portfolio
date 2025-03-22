@@ -1,11 +1,8 @@
 :root {
-  --black:#11131d;   
-  --white:#e8e7e7;
-  --red:#FF7C7C;
+  --black: #11131d;
+  --white: #e8e7e7;
+  --red: #ff7c7c;
 }
-
-
-
 
 /* // 21243D */
 
@@ -13,24 +10,21 @@ body {
   background-color: var(--black);
   display: flex;
   justify-content: space-between;
-  flex-direction:column;
+  flex-direction: column;
   margin: 0px;
-  min-width:300px;
-
+  min-width: 300px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-
-#menuToggle
-{
-  display: block; 
+#menuToggle {
+  display: block;
 }
 
-#menuToggle span{
+#menuToggle span {
   width: 28px;
   height: 3px;
   margin-bottom: 5px;
@@ -38,106 +32,97 @@ code {
   top: 30px;
   background: #cdcdcd;
   border-radius: 3px;
-  
+
   z-index: 1;
-  
 }
-button{
-    background-color:var(--white);
-    border: none;
-    color: var( --black);
-    text-align: center;
-    text-decoration: none;
-    font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
-    border-radius: 7px;
-    transition-duration: 500ms ;
-    transition-property: background-color;
-}
-
-button:hover{
-    background-color: var(--red);
-}
-.smallogo{
-  
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
-    transition-duration: 500ms ;
-    border-radius: 3px;
-   
+button {
+  background-color: var(--white);
+  border: none;
+  color: var(--black);
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 7px;
+  transition-duration: 500ms;
+  transition-property: background-color;
 }
 
-.smallogo:hover{
-  
+button:hover {
+  background-color: var(--red);
+}
+.smallogo {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  transition-duration: 500ms;
+  border-radius: 3px;
+}
+
+.smallogo:hover {
   background-color: var(--red);
 }
 
-
-.link{
-    color: var(--white);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 300 ;
+.link {
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 /* Below are Nav */
 
-nav{
-    height: 5vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 90vw;
-    margin: auto;
+nav {
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
 }
 
-
-.line{
-    width: 100vw;  
-    border-bottom: 1px solid var(--white);
-    }
-
-
-.NavContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+.line {
+  width: 100vw;
+  border-bottom: 1px solid var(--white);
 }
 
-
-.Vrt{
-    border-left: 1px solid var(--white);
-    left: 100px;
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-
-img{
-    width: 50px;
-    height: 50px;  
+.Vrt {
+  border-left: 1px solid var(--white);
+  left: 100px;
 }
 
-.pLogo{
-  height: 45px ;
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.pLogo {
+  height: 45px;
   width: auto;
   margin-left: -2vw;
 }
 
-.smallogo{
-    width: auto;
-    height: 16px;  
+.smallogo {
+  width: auto;
+  height: 16px;
 }
 
 /* Below are SubNav */
-.Itemshow{
+.Itemshow {
   display: flex;
   justify-content: space-between;
 }
 
-.SubNav{
+.SubNav {
   z-index: 2;
   position: relative;
   display: flex;
@@ -146,50 +131,44 @@ img{
   margin: auto;
   height: 10vh;
   background-color: var(--black);
-
 }
 
-.ProductContainer{
+.ProductContainer {
   display: flex;
   justify-content: space-between;
 }
 
-.PName{
+.PName {
   font-size: 28px;
   color: var(--white);
-  font-family: 'Noto Serif Display', serif ;
+  font-family: "Noto Serif Display", serif;
 }
 
-.PBox{
+.PBox {
   font-size: 26px;
   color: var(--white);
-  font-family: 'Noto Serif Display', serif ;
-  
+  font-family: "Noto Serif Display", serif;
 }
 
-
-.Arrow{
+.Arrow {
   width: 30px;
   height: auto;
 }
-.Pbutton{
+.Pbutton {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 1vw 0px 1vw;
   gap: 5vh;
-  
 }
 
-
-.Pbutton:not(#mywork):hover{
+.Pbutton:not(#mywork):hover {
   background-color: var(--white);
 }
 
 .Pbutton:not(#mywork):hover .PBox {
   color: var(--black);
 }
-
 
 .Pbutton .Arrow {
   transition: transform 0.3s ease-in-out;
@@ -202,9 +181,9 @@ img{
 
 /* Below are Content */
 
-article{
+article {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-between;
   padding-left: 5vw;
   padding-top: 1vw;
@@ -212,27 +191,36 @@ article{
   width: 40vw;
 }
 
-h1{
+h1 {
   font-size: 14px;
   line-height: 1.5;
   font-family: "Noto Sans", sans-serif;
-  font-weight: 300 ;
+  font-weight: 300;
   color: var(--white);
 }
 
-.AllContentContainer{
+.AllContentContainer {
   height: 84vh;
   max-height: 100%;
- 
+
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  gap:5vw;
+  gap: 5vw;
   overflow: hidden;
 }
 
+.Contact-button {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-size: 30px;
+  padding: 30px 50px;
+  text-decoration: underline 3px;
+  border-radius: 2px;
+}
 
-.TextContentContainer{
+.TextContentContainer {
   padding-top: 10vh;
   padding-left: 5vw;
   display: flex;
@@ -241,87 +229,78 @@ h1{
   gap: 10px;
 }
 
-#potraitbox{
+#potraitbox {
   display: flex;
   align-items: flex-end;
 }
 
-.nameBox{
+.nameBox {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   padding-right: 10vw;
   padding-bottom: 5vh;
 }
 
-
-.BigName{
+.BigName {
   font-size: 6vw;
   position: relative;
   background: none;
   text-align: left;
-  font-family: 'Noto Serif JP', serif ;
-  font-weight: 400; 
-  
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+
   color: var(--white);
   /* padding-left: 5vw;
   padding-right: 5vw;
   padding-top: 2vh; */
-  transition-duration: 500ms ;
+  transition-duration: 500ms;
   transition-property: color;
-  
-  
 }
 
-.BigName:hover{
+.BigName:hover {
   background: none;
   color: var(--red);
 }
 
-.Portrait{
+.Portrait {
   position: absolute;
-  width: auto ;
+  width: auto;
   object-fit: cover;
   object-fit: scale-down;
   object-position: top;
- right: 10vw;
+  right: 10vw;
   height: 60vh;
   bottom: 0px;
-
-  
 }
 
-.Background{
+.Background {
   height: 100vh;
   width: 100vw;
-  background-color: var(--black);  
+  background-color: var(--black);
   z-index: -1;
   overflow: hidden;
 }
 
-
-.footer{
+.footer {
   font-size: 10px;
   color: var(--white);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   position: absolute;
   right: 10px;
-  bottom: 10px
+  bottom: 10px;
 }
 
-
-
-@media(max-width:1000px){
-  
-  .SubNav{
+@media (max-width: 1000px) {
+  .SubNav {
     width: 100vw;
     justify-content: center;
   }
 
-  .PBox{
+  .PBox {
     font-size: 16pt;
   }
 
-  .ProductContainer{
+  .ProductContainer {
     width: 90vw;
   }
 
@@ -329,105 +308,95 @@ h1{
     color: var(--black);
   }
 
-  article{
-  width: 60vw;
+  article {
+    width: 60vw;
   }
-  .NavContainer{
-      gap: 10px;
+  .NavContainer {
+    gap: 10px;
   }
 
-  #mywork{
-      display: none;
+  #mywork {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 800px) {
-
-.SubNav{
-  width: 100vw;
-  position: relative;
-}
-.ProductContainer{
-  width: 100vw;
-}
-.Pbutton{
-  justify-content: center;
-  width: 33vw;
-  padding:0;
-}
-
-
-
-.BigName{
-    font-size: 10vh;
-    white-space: normal;  
+  .SubNav {
+    width: 100vw;
+    position: relative;
   }
-.content{flex-direction: column;}
+  .ProductContainer {
+    width: 100vw;
+  }
+  .Pbutton {
+    justify-content: center;
+    width: 33vw;
+    padding: 0;
+  }
 
+  .BigName {
+    font-size: 10vh;
+    white-space: normal;
+  }
+  .content {
+    flex-direction: column;
+  }
 
-  .PBox{
+  .PBox {
     font-size: 14pt;
   }
 
-  #menuToggle span{
-      display: block;
-  }
-  
-
-  .Arrow{
-      display: none;
+  #menuToggle span {
+    display: block;
   }
 
-  #mywork{
-      display: none;
+  .Arrow {
+    display: none;
   }
 
-  .endline{
-      display: none;
+  #mywork {
+    display: none;
   }
 
-  .Portrait{
-      display: none;
+  .endline {
+    display: none;
   }
 
-
-  article{
-      width: 90vw;
-      padding-left: 5vw;
-  }
-  .NavContainer{
-      display: none;
+  .Portrait {
+    display: none;
   }
 
+  article {
+    width: 90vw;
+    padding-left: 5vw;
+  }
+  .NavContainer {
+    display: none;
+  }
 }
 
-@media(max-width:500px){
-  .BigName{
-    
+@media (max-width: 500px) {
+  .BigName {
     border-radius: 0 20vw 0 0;
   }
-  article{
+  article {
     gap: 1vh;
   }
 }
 
-@media(max-height:700px){
- 
-  article{
-      gap: 2vh;
+@media (max-height: 700px) {
+  article {
+    gap: 2vh;
   }
-  img{
-      width: 30px;
-      height: 30px;  
+  img {
+    width: 30px;
+    height: 30px;
   }
-
-
 }
-
 
 /* Below are interactive items */
 
-.Menu{
+.Menu {
   position: absolute;
   top: 10vh;
   z-index: 1;
@@ -436,68 +405,61 @@ h1{
   margin-left: -1vw;
 }
 
-.Gap{
-  background-color:transparent;
+.Gap {
+  background-color: transparent;
   height: 1vh;
 }
 
-.MenuItem{
+.MenuItem {
   display: flex;
   background-color: var(--black);
   border: 1px solid var(--white);
   justify-content: flex-start;
   padding-left: 1vw;
   align-items: center;
-  font-size: 28px;  
+  font-size: 28px;
   color: var(--white);
-  font-family: 'Noto Serif Display', serif ;  
+  font-family: "Noto Serif Display", serif;
   height: 10vh;
   margin-bottom: -1px;
   border-top: 1px solid var(--white);
   border-radius: 0px;
   transition: none;
-
 }
 
-
-.MenuItem:hover{
+.MenuItem:hover {
   background-color: var(--white);
   color: var(--black);
 }
 
-
-
-.example_product{
+.example_product {
   margin: 0px;
   height: auto;
 }
 
-#Bednarc{
- height: 60vh;
+#Bednarc {
+  height: 60vh;
   width: 30vw;
-  Top: 100px;
+  top: 100px;
   object-fit: cover;
 }
-p{
+p {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 40vw;
 }
 
-@media (max-width:800px) {
-  
-  #Bednarc{
-     width: 80vw;
-   }
-   p{
+@media (max-width: 800px) {
+  #Bednarc {
+    width: 80vw;
+  }
+  p {
     width: 75vw;
-   }
-
-  
+  }
 }
 
-.content{
+.content {
   background-color: var(--red);
   position: relative;
   top: 10vh;
@@ -508,9 +470,7 @@ p{
   width: 80vw;
 }
 
-
-
-.productphoto{
+.productphoto {
   top: 15vh;
   position: relative;
   left: 10vw;
@@ -518,13 +478,13 @@ p{
   height: auto;
 }
 
-.quote{
+.quote {
   position: relative;
   z-index: 1;
   left: 48vw;
   top: 20vh;
   width: 40vw;
-  font-family: 'Noto Serif Display', serif ;
+  font-family: "Noto Serif Display", serif;
   font-size: 3vw;
   background-color: var(--black);
   color: var(--white);
@@ -532,46 +492,40 @@ p{
   border: solid var(--white);
 }
 
-
-.li{
+.li {
   font-size: 20px;
-  font-family: 'Noto Serif Display', serif ;  
+  font-family: "Noto Serif Display", serif;
   color: var(--black);
   background-color: var(--white);
 }
-.text{
+.text {
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--black);
 }
 
-
-
-@media(max-height:700px){
- 
-  .Menu{
+@media (max-height: 700px) {
+  .Menu {
     top: 20vh;
     left: 50%;
-    margin-left: -50vw ;
+    margin-left: -50vw;
     width: 100vw;
   }
 
-  #Bednarc{
-  object-fit: fill;
-  width: 80vw;
-  height: auto;
+  #Bednarc {
+    object-fit: fill;
+    width: 80vw;
+    height: auto;
   }
 
-  p{
+  p {
     width: 70vw;
     font-size: 9px;
-    
   }
 }
 
 /* below are projects */
 /* below are projects */
-
 
 .ProductFullPage {
   overflow: hidden;
@@ -584,9 +538,7 @@ p{
   border-top: 1px solid var(--white);
 }
 
-
-
-.pageBox{
+.pageBox {
   background-color: var(--black);
   border: solid transparent;
   border-width: 1.5px;
@@ -596,47 +548,44 @@ p{
   justify-content: space-between;
   position: relative;
   height: 66vh;
-  width:45vw;
+  width: 45vw;
   top: 10vh;
   left: 10vw;
 
   /* box-shadow: -10px 18px 20px rgb(26, 181, 163) */
 }
 
-.CAIJcover{
+.CAIJcover {
   width: 40vw;
   border-radius: 5px;
   height: 40vh;
   object-fit: cover;
-  object-position: top ;
+  object-position: top;
 }
 
-.SpotOnCover{
+.SpotOnCover {
   width: 40vw;
   border-radius: 5px;
   height: 40vh;
   object-fit: cover;
-  object-position: bottom ;
+  object-position: bottom;
 }
 
-
-
-.description{
+.description {
   /* padding-left: 2vw;
   padding-right: 2vw; */
   width: 40vw;
 }
 
-.extraInfo{
+.extraInfo {
   /* padding-left: 2vw;
   padding-right: 2vw; */
   padding-bottom: 1vh;
   color: #868789;
 }
 
-a{
+a {
   color: var(--white);
   font-style: italic;
   margin-left: 10px;
 }
-
