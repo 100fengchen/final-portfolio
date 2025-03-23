@@ -4,11 +4,9 @@
   --red: #ff7c7c;
 }
 
-/* // 21243D */
-
 html,
 body {
-  min-width: 600px; /* Set your desired minimum width */
+  min-width: 600px;
 }
 
 body {
@@ -341,7 +339,8 @@ p {
   gap: 20px;
   width: 40vw;
 }
-*/ .content {
+
+.content {
   background-color: var(--red);
   position: relative;
   top: 10vh;
@@ -438,15 +437,10 @@ p {
 }
 
 .extraInfo {
-  /* padding-left: 2vw;
-  padding-right: 2vw; */
   padding-bottom: 1vh;
   color: #868789;
 }
-/* This is srhink page
-This is srhink page
-This is srhink page
-This is srhink page */
+
 a {
   color: var(--white);
   font-style: italic;
@@ -515,98 +509,3 @@ a {
     display: none;
   }
 }
-
-/* @media only screen and (max-width: 800px) {
-  .SubNav {
-    width: 100vw;
-    position: relative;
-  }
-  .ProductContainer {
-    width: 100vw;
-  }
-  .Pbutton {
-    justify-content: center;
-    width: 33vw;
-    padding: 0;
-  }
-
-  .BigName {
-    font-size: 10vh;
-    white-space: normal;
-  }
-  .content {
-    flex-direction: column;
-  }
-
-  .PBox {
-    font-size: 14pt;
-  }
-
-  #menuToggle span {
-    display: block;
-  }
-
-  .Arrow {
-    display: none;
-  }
-
-  
-
-  .endline {
-    display: none;
-  }
-
-  .Portrait {
-    display: none;
-  }
-
-  article {
-    width: 90vw;
-    padding-left: 5vw;
-  }
-  .NavContainer {
-    display: none;
-  }
-}
-
-@media (max-width: 500px) {
-  .BigName {
-    border-radius: 0 20vw 0 0;
-  }
-  article {
-    gap: 1vh;
-  }
-}
-
-@media (max-height: 700px) {
-  article {
-    gap: 2vh;
-  }
-  img {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-
-@media (max-height: 700px) {
-  .Menu {
-    top: 20vh;
-    left: 50%;
-    margin-left: -50vw;
-    width: 100vw;
-  }
-
-  #Bednarc {
-    object-fit: fill;
-    width: 80vw;
-    height: auto;
-  }
-
-  p {
-    width: 70vw;
-    font-size: 9px;
-  }
-}
-
-/* Below are interactive items */
