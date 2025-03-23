@@ -1,6 +1,7 @@
 import React from "react";
-import Portrait from "../visual/Potrait.png";
+import Portrait from "../visual/Portrait.png";
 import { useEffect, useState } from "react";
+import Flower from "../visual/Flower.png";
 
 const RotatingButton = () => {
   const textsArray = [
@@ -28,9 +29,9 @@ const RotatingButton = () => {
 
 export default function Article({ isHovering, setIsHovering, itemClick }) {
   return (
-    <div className="AllContentContainer">
-      <div className="TextContentContainer">
-        <article>
+    <>
+      <div className="AllContentContainer">
+        <div className="TextContentContainer">
           {/* <h1>Free lancer</h1>  */}
           <h1>Based in Finland and Taiwan</h1>
           <h1>
@@ -47,24 +48,21 @@ export default function Article({ isHovering, setIsHovering, itemClick }) {
             interdisciplinary projects aimed at developing effective and
             sustainable solutions that cater to diverse needs.{" "}
           </h1>
-        </article>
-      </div>
-      <div id="potraitbox">
-        <img
-          className="Portrait"
-          src={Portrait}
-          alt="My handsome selfie hehe"
-        />
-        <div className="nameBox">
-          <div id="rectangle">
+        </div>
+        <img className="Flower" src={Flower} alt="My flower" />
+        <div className="potraitContainer">
+          <img
+            className="Portrait"
+            src={Portrait}
+            alt="My handsome selfie hehe"
+          />
+          <div className="nameContainer">
             <button className="BigName">陳</button>
-          </div>
-          <div id="rectangle">
             <button className="BigName">百峰</button>
           </div>
         </div>
       </div>
       <RotatingButton />;
-    </div>
+    </>
   );
 }

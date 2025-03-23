@@ -49,7 +49,6 @@ function App() {
         {hoveredItem === "MeetLuotsi" && <MeetLuotsi />}
         {hoveredItem === "HopeaLinja" && <HopeaLinja />}
         {hoveredItem === "Panorama" && <Panorama />}
-        {/* {isClickedItem === 'SpotOnContent' && <SpotOn />} */}
       </body>
     </>
   );
