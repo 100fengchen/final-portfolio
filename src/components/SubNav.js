@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Arrow from "../visual/Arrow.svg";
 import ServiceDesignMenu from "./ServiceDesignMenu";
+import IndustrialDesignMenu from "./IndustrialDesignMenu";
 import PersonalLogo from "../visual/Logo_PF.svg";
 
 export default function SubNav({
@@ -11,8 +12,11 @@ export default function SubNav({
   sethoveredItem,
   setIsClicked,
 }) {
-  const productContainerRef = useRef(null); // Create a ref for the ProductContainer
-  const [containerWidth, setContainerWidth] = useState(0); // State to store the width
+  const productContainerRef = useRef(null); // create a ref for the ProductContainer
+
+  const [containerWidth, setContainerWidth] = useState(0);
+
+  const [hoveredMenu, setHoveredMenu] = useState(null);
 
   const updateWidth = () => {
     if (productContainerRef.current) {
@@ -34,20 +38,14 @@ export default function SubNav({
     };
   }, []);
 
-  const handleMouseEnterButton = () => {
+  const handleMouseEnterButton = (menuName) => {
+    setHoveredMenu(menuName);
     setIsHovering(true);
   };
 
   const handleMouseLeaveButton = () => {
-    setTimeout(setIsHovering(false), 1000); // Small delay to allow the mouse to move to the dropdown menu
-  };
-
-  const handleMouseEnterMenu = () => {
-    setIsHovering(true); // Keep the menu open when the mouse is over it
-  };
-
-  const handleMouseLeaveMenu = () => {
-    setIsHovering(false); // Close the menu when the mouse leaves it
+    setIsHovering(false);
+    setHoveredMenu(null);
   };
 
   return (
@@ -65,17 +63,19 @@ export default function SubNav({
         <div className="Itemshow">
           <div className="ProductContainer" ref={productContainerRef}>
             <div className="Vrt endline front"></div>
+
+            {/* Service Design Button */}
             <div
               className="Pbutton"
-              onMouseEnter={handleMouseEnterButton}
+              onMouseEnter={() => handleMouseEnterButton("ServiceDesignMenu")}
               onMouseLeave={handleMouseLeaveButton}
             >
-              {isHovering && (
+              {hoveredMenu === "ServiceDesignMenu" && (
                 <ServiceDesignMenu
                   hoveredItem={hoveredItem}
                   sethoveredItem={sethoveredItem}
-                  onMouseEnter={handleMouseEnterMenu}
-                  onMouseLeave={handleMouseLeaveMenu}
+                  onMouseEnter={() => setIsHovering(true)}
+                  onMouseLeave={() => setIsHovering(false)}
                   setIsClicked={setIsClicked}
                   containerWidth={containerWidth}
                 />
@@ -86,16 +86,49 @@ export default function SubNav({
                 src={Arrow}
                 alt="This is an arrow"
                 style={{
-                  transform: isHovering ? "rotate(180deg)" : "rotate(0deg)",
+                  transform:
+                    hoveredMenu === "ServiceDesignMenu"
+                      ? "rotate(180deg)"
+                      : "rotate(0deg)",
                 }}
               />
             </div>
+
             <div className="Vrt"></div>
-            <div className="Vrt"></div>
-            <div className="Pbutton">
+
+            {/* Industrial Design Button */}
+
+            <div
+              className="Pbutton secondPbutton"
+              onMouseEnter={() =>
+                handleMouseEnterButton("IndustrialDesignMenu")
+              }
+              onMouseLeave={handleMouseLeaveButton}
+            >
+              {hoveredMenu === "IndustrialDesignMenu" && (
+                <IndustrialDesignMenu
+                  hoveredItem={hoveredItem}
+                  sethoveredItem={sethoveredItem}
+                  onMouseEnter={() => setIsHovering(true)}
+                  onMouseLeave={() => setIsHovering(false)}
+                  setIsClicked={setIsClicked}
+                  containerWidth={containerWidth}
+                />
+              )}
               <div className="P-Text">Industrial Design</div>
-              <img className="Arrow" src={Arrow} alt="This is an arrow" />
+              <img
+                className="Arrow"
+                src={Arrow}
+                alt="This is an arrow"
+                style={{
+                  transform:
+                    hoveredMenu === "IndustrialDesignMenu"
+                      ? "rotate(180deg)"
+                      : "rotate(0deg)",
+                }}
+              />
             </div>
+
             <div className="Vrt endline"></div>
           </div>
         </div>

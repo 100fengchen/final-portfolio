@@ -15,11 +15,7 @@ export default function Nav() {
           />
           <div className="P-Text">Pai-Feng Chen's Work </div>
         </div>
-        <div id="menuToggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <div id="menuToggle"></div>
       </div>
     </nav>
   );

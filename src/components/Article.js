@@ -32,7 +32,6 @@ export default function Article({ isHovering, setIsHovering, itemClick }) {
     <>
       <div className="AllContentContainer">
         <div className="TextContentContainer">
-          {/* <h1>Free lancer</h1>  */}
           <h1>Based in Finland and Taiwan</h1>
           <h1>
             I possess a blend of practical and explorative thinking. My diverse
@@ -46,7 +45,7 @@ export default function Article({ isHovering, setIsHovering, itemClick }) {
           <h1>
             I am an enthusiastic designer, eager to contribute to
             interdisciplinary projects aimed at developing effective and
-            sustainable solutions that cater to diverse needs.{" "}
+            sustainable solutions that cater to diverse needs.
           </h1>
         </div>
         <img className="Flower" src={Flower} alt="My flower" />
@@ -62,7 +61,6 @@ export default function Article({ isHovering, setIsHovering, itemClick }) {
           </div>
         </div>
       </div>
-      <RotatingButton />;
     </>
   );
 }
